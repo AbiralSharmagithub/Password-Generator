@@ -1,1 +1,1 @@
-# Javascript-Practice
+# Password Generator
