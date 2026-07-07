@@ -1,0 +1,113 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(90deg, rgb(0, 69, 139), rgb(28, 28, 66));
+  font-family: sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  width: 70vh;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.591);
+  box-shadow: 1px 1px 1px 1px black;
+}
+.head {
+  font-size: 1.6rem;
+  color: rgb(54, 54, 113);
+  text-align: center;
+  font-weight: 700;
+}
+.input-wrapper {
+  position: relative;
+  margin: 20px;
+}
+#password {
+  padding: 12px;
+  border-radius: 10px;
+  width: 92%;
+  border: 1px solid whitesmoke;
+  background-color: aliceblue;
+  box-shadow: 1px 1px whitesmoke;
+}
+#password:focus {
+  border-color: whitesmoke;
+  outline: none;
+}
+#icon {
+  position: absolute;
+  left: 80%;
+  top: 12px;
+}
+.sub-container {
+  background-color: white;
+  border-radius: 10px;
+  padding: 12px;
+  margin-left: 20px;
+  width: 83%;
+  height: 25vh;
+  margin-bottom: 10px;
+}
+#password-form {
+  height: 20vh;
+  margin-bottom: 20px;
+}
+label {
+  display: inline-block;
+  width: 230px;
+}
+#generator-btn {
+  width: 83%;
+  margin-left: 20px;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: rgba(118, 118, 232,0.5);
+  border: 1px solid darkblue ;
+  color: white;
+  font-size: 16px;
+  transition: 0.2s ease all;
+}
+#generator-btn:hover {
+  background-color: green;
+  transform: translateX(4px);
+  cursor: pointer;
+}
+#password-letters {
+  display: inline-block;
+  width: 87%;
+  background-color: white;
+  border: 1px solid rgb(54, 54, 113);;
+  padding: 4px;
+  border-radius: 5px;
+}
+#count {
+  border: 1px solid black;
+  padding: 0px 2px;
+  border-radius: 3px;
+  background-color: rgba(127, 138, 255, 0.13);
+}
+#password-strength {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    margin-top: 8px;
+    max-width: 285px;
+    margin-left: 20px;
+}
+#strength-indicator {
+  background-color: white;
+  max-width: 285px;
+  margin-top: 10px;
+  padding: 4px;
+  margin-left: 20px;
+  border-radius: 5px;
+}
