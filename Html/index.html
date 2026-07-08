@@ -21,10 +21,10 @@
         <i class="fa-regular fa-copy" title="copy" id="icon"></i>
       </div>
       <div class="sub-container">
-        <div id="password-length">
-          <p>Password Length</p> 
-          <span id="password-letters"></span>
-          <span id="count">0</span>
+        <div id="password-letters">
+          <p id="password-length"> Password Length</p> 
+          <input type="range" min="6" max="24" value="12" id="length-slider">
+          <span id="count">12</span>
         </div>
         <form id="password-form">
           <label for="upperCase">Include Uppercase</label>
@@ -42,11 +42,13 @@
       </button>
       <div class="password-container">
         <p id="password-strength">
-          <span id="">Password Strength:</span> <span id="strength">strength</span>
+          <span id="">Password Strength:</span> <span id="strength">weak</span>
         </p>
-        <p id="strength-indicator"></p>
+        <div id="strength-indicator">
+          <p id="strength-bar"></p>
+        </div>
       </div>
     </div>
-    <script src="Javascript/index.js"></script>
+    <script src="/Javascript/index.js" ></script>
   </body>
 </html>

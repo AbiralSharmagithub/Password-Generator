@@ -54,7 +54,7 @@ body {
   padding: 12px;
   margin-left: 20px;
   width: 83%;
-  height: 25vh;
+  height: 28vh;
   margin-bottom: 10px;
 }
 #password-form {
@@ -63,7 +63,8 @@ body {
 }
 label {
   display: inline-block;
-  width: 230px;
+  width: 240px;
+  margin-top: 4px;
 }
 #generator-btn {
   width: 83%;
@@ -82,17 +83,22 @@ label {
   cursor: pointer;
 }
 #password-letters {
-  display: inline-block;
-  width: 87%;
-  background-color: white;
-  border: 1px solid rgb(54, 54, 113);;
-  padding: 4px;
-  border-radius: 5px;
+  display: flex;
+  align-items: flex-start;
+
 }
+#password-length {
+    max-width: 32%;
+}
+#length-slider {
+    width: 55%;
+    border: 1px solid red;
+} 
 #count {
   border: 1px solid black;
-  padding: 0px 2px;
-  border-radius: 3px;
+  padding: 2px;
+  border-radius: 4px;
+  margin-left: 10px;
   background-color: rgba(127, 138, 255, 0.13);
 }
 #password-strength {
@@ -107,7 +113,17 @@ label {
   background-color: white;
   max-width: 285px;
   margin-top: 10px;
-  padding: 4px;
+  height: 8px;
   margin-left: 20px;
   border-radius: 5px;
+}
+#strength-bar {
+    height: 100%;
+    width: 0;
+    min-width: 10%;
+    background-color: brown;
+    border-radius: 10px;
+}
+#icon:hover {
+ cursor: pointer;
 }
