@@ -14,8 +14,8 @@ body {
 .container {
   display: flex;
   flex-direction: column;
-  height: 70vh;
-  width: 70vh;
+  height: 80vh;
+  width: 60vw;
   border-radius: 20px;
   padding: 20px;
   background-color: rgba(255, 255, 255, 0.591);
@@ -34,7 +34,7 @@ body {
 #password {
   padding: 12px;
   border-radius: 10px;
-  width: 92%;
+  width: 50vw;
   border: 1px solid whitesmoke;
   background-color: aliceblue;
   box-shadow: 1px 1px whitesmoke;
@@ -53,8 +53,8 @@ body {
   border-radius: 10px;
   padding: 12px;
   margin-left: 20px;
-  width: 83%;
-  height: 28vh;
+  width: 50vw;
+  height: 40vh;
   margin-bottom: 10px;
 }
 #password-form {
@@ -67,12 +67,12 @@ label {
   margin-top: 4px;
 }
 #generator-btn {
-  width: 83%;
+  width: 50vw;
   margin-left: 20px;
   border-radius: 10px;
   padding: 10px;
-  background-color: rgba(118, 118, 232,0.5);
-  border: 1px solid darkblue ;
+  background-color: rgba(118, 118, 232, 0.5);
+  border: 1px solid darkblue;
   color: white;
   font-size: 16px;
   transition: 0.2s ease all;
@@ -85,15 +85,15 @@ label {
 #password-letters {
   display: flex;
   align-items: flex-start;
-
 }
 #password-length {
-    max-width: 32%;
+  max-width: 12vw;
 }
 #length-slider {
-    width: 55%;
-    border: 1px solid red;
-} 
+  margin-left: 10px;
+  width: 20vw;
+  border: 1px solid red;
+}
 #count {
   border: 1px solid black;
   padding: 2px;
@@ -101,29 +101,60 @@ label {
   margin-left: 10px;
   background-color: rgba(127, 138, 255, 0.13);
 }
+.password-container {
+  width: 51vw;
+  margin-left: 5px;
+}
 #password-strength {
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
-    margin-top: 8px;
-    max-width: 285px;
-    margin-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  margin-top: 8px;
+  margin-left: 20px;
 }
 #strength-indicator {
   background-color: white;
-  max-width: 285px;
   margin-top: 10px;
   height: 8px;
   margin-left: 20px;
   border-radius: 5px;
 }
 #strength-bar {
-    height: 100%;
-    width: 0;
-    min-width: 10%;
-    background-color: brown;
-    border-radius: 10px;
+  height: 100%;
+  width: 0;
+  min-width: 10%;
+  background-color: brown;
+  border-radius: 10px;
 }
 #icon:hover {
- cursor: pointer;
+  cursor: pointer;
+}
+@media screen and (max-width:564px) and (min-width:250px) {
+  .container {
+    width: 85vw;
+  }
+  .sub-container{
+    width: 70vw;
+    font-size: 10px;
+    margin-left:0px ;
+  }
+  label {
+    width: 35vw;
+  }
+  #password {
+    width: 70vw;
+    margin-left: 0px;
+  }
+  #length-slider {
+    margin-left: 28px;
+  }
+  #generator-btn {
+    width: 70vw;
+    margin-left: 0;
+  }
+  .password-container{
+    width: 70vw;
+    font-size: 13px;
+    margin-left: 0px;
+  }
 }
