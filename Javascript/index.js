@@ -69,7 +69,7 @@ function makePassword() {
   }
 }
 copyButton.addEventListener("click",()=>{
-    if(inputPassword.length>0)
+    if(inputPassword.value.length>0)
     {
   alert("you have copied the password");
     }
